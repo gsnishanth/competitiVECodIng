@@ -9,7 +9,11 @@ public:
         for(int i=0;i<n;i++)
         {
             prefix+=nums[i];
-            int rem=((prefix%k)+k)%k;
+            int rem=prefix%k;
+            if(rem<0)
+            {
+                rem+=k;
+            }
             count+=freq[rem];
             freq[rem]++;
         }
