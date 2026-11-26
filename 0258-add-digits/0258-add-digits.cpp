@@ -5,12 +5,12 @@ public:
         {
             return num;
         }
-        int n=num;
-        while(n>=10)
+       
+        while(num>=10)
         {
-            int sum=n/10+n%10;
-            n=sum;
+            num=num/10+num%10;
+           
         }
-        return n;
+        return num;
     }
 };
